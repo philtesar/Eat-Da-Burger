@@ -1,0 +1,50 @@
+html {
+ 	background-color: #7a4040;
+ }
+
+ body {
+	background-color: white;
+ }
+
+ .burger_image {
+ 	size: 75%;
+ 	display: block;
+    margin: auto;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-family: Saira Extra Condensed;
+ 	font-size: 65px;
+ }
+
+.eatBurger {
+	align-content: center;
+ }
+
+ .burgerEaten {
+ 	font-family: Saira Extra Condensed;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	margin: 10px;
+ 	padding: 10px;
+ 	color: #FFFFFF;
+ 	background-color: #40547a;
+ }
+
+ h2 {
+  	text-align: center;
+ 	font-family: Saira Extra Condensed;
+ 	font-size: 40px;
+ }
+
+ .addBurgerButton {
+ 	font-family: Saira Extra Condensed;
+ 	color: #FFFFFF;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	background-color: #40547a;
+ }

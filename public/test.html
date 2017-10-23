@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Burgers To Eat</h3>
+                </div>
+                <div class="panel-body">
+                    {{#each burgers}} {{#unless this.devoured}}
+                    <div class='burgerEaten'>
+                        <div>
+                            {{this.burger_name}}
+                            <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                                <button type="submit" class="eatBurger"> Eat This Burger</button>
+                            </form>
+                        </div>
+                    </div>
+                    {{/unless}} {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Eaten Burgers</h3>
+                </div>
+                <div class="panel-body">
+                    {{#each burgers}} {{#unless this.devoured}}
+                    <div class='burgerEaten'>
+                        <div>
+                            {{this.burger_name}}
+                        </div>
+                    </div>
+                    {{/if}} {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Add A Burger Option</h2>
+    <form action="/burgers" method="POST">
+        <input type="text" id="name" name="burger_name" placeholder="Add A Burger">
+        <button type="submit" class="addBurgerButton">Add The Burger</button>
+    </form>
+    </div>
+</body>
+
+</html>
